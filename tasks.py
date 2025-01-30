@@ -41,9 +41,9 @@ def check_age(num: int, ) -> int:
     if (num<0):
         raise ('Age must be more than 0')
     if (num>= 18):
-        return ('User legal age')
+        return ('User is legal age')
     if (num<18):
-        return ('User under legal age')
+        return ('User is under legal age')
 # print(check_age(-5))
 print(check_age(15))
 print(check_age(21))
