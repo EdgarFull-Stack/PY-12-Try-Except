@@ -49,3 +49,26 @@ while True:
         print("Manęs niekaip neatsikratysit - FINALLY komanda")
 
 print("Programa tęsia darbą")
+print('----------------------------------------------')
+#  Example
+def sumuok_int_skaicius(sk1: int, sk2: int) -> int:
+    if not (type(sk1) is int and type(sk2) is int):
+        raise ValueError  # iššaukiame klaidą, jei argumentai nėra sveiki skaičiai
+    return sk1 + sk2
+
+res = sumuok_int_skaicius(1, 5)
+print(res)
+print('----------------------------------------------')
+#  Example
+current_user = 'Manager'
+
+employee_salaries= {
+    'Jim':1000,
+    'John':2000,
+}
+
+def show_employee_salary(employee: str) -> int :
+    if current_user not in ['Admin','Manager']:
+        raise ValueError ('You are not allowed')
+    return employee_salaries[employee]
+print(show_employee_salary('Jim'))

@@ -35,6 +35,16 @@ else:
     print(f'Conversion is done: {int_number}')
 finally:
     print('Program finished')
-
-
+print('----------------------------------------------')
+#  Task 4
+def check_age(num: int, ) -> int:
+    if (num<0):
+        raise ('Age must be more than 0')
+    if (num>= 18):
+        return ('User legal age')
+    if (num<18):
+        return ('User under legal age')
+# print(check_age(-5))
+print(check_age(15))
+print(check_age(21))
 
