@@ -23,5 +23,18 @@ except ZeroDivisionError:
 except ValueError:
     print('Use numbers')
 print('----------------------------------------------')
+# Task 3
+input3 = input('Put number: ')
+
+try:
+    int_number = int(input3)
+    print('Accepted number', int_number)
+except ValueError:
+    print('Try to put integer')
+else:
+    print(f'Conversion is done: {int_number}')
+finally:
+    print('Program finished')
+
 
 

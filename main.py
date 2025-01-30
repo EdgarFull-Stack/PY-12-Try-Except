@@ -1,4 +1,4 @@
-# Example
+#  Example
 ivestis = '4'
 try:
     skaicius = int(ivestis)
@@ -25,5 +25,27 @@ except ValueError:
 except ZeroDivisionError:
     print("Mes crashinom su ZeroDivisionError")
     print("Pakeiskite daliklį iš 0 į kitą")
+
+print("Programa tęsia darbą")
+print('----------------------------------------------')
+#  Example
+try:
+    res = 100 / 0
+except ZeroDivisionError:
+    print("Dalyba iš 0 negalima")
+else:
+    print(res)
+print('----------------------------------------------')
+#  Example
+while True:
+    ivestis = input("Įveskite float skaičių")
+    try:
+        float_skaicius = float(ivestis)
+        print("Įvestis tinkama", float_skaicius)
+        break
+    except ValueError:
+        print("Įvestis NETINKAMA, pakartokite!!!")
+    finally:
+        print("Manęs niekaip neatsikratysit - FINALLY komanda")
 
 print("Programa tęsia darbą")
